@@ -6,10 +6,10 @@ from rest_framework.filters import OrderingFilter
 from rest_framework.pagination import LimitOffsetPagination
 from reviews.models import Category, Comment, Genre, Review, Title
 
-from .filters import TitleFilter, ListCreateDestroyViewSet
+from api.permissions import (IsAdminOrReadOnly,
+                             IsAuthorOrAdministratorOrReadOnly)
 
-from api.permissions import (IsAuthorOrAdministratorOrReadOnly,
-                             IsAdminOrReadOnly)
+from .filters import ListCreateDestroyViewSet, TitleFilter
 from .serializers import (CategorySerializer, CommentSerializer,
                           GenreSerializer, ReviewSerializer,
                           TitleCreateSerializer, TitleSerializer)
