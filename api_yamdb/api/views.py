@@ -1,12 +1,11 @@
+from api.permissions import (IsAdminOrReadOnly,
+                             IsAuthorOrAdministratorOrReadOnly)
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, viewsets
 from rest_framework.filters import OrderingFilter
 from rest_framework.pagination import LimitOffsetPagination
-
-from api.permissions import (IsAdminOrReadOnly,
-                             IsAuthorOrAdministratorOrReadOnly)
 from reviews.models import Category, Comment, Genre, Review, Title
 
 from .filters import ListCreateDestroyViewSet, TitleFilter

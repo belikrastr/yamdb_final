@@ -1,6 +1,5 @@
 import django_filters
 from rest_framework import mixins, viewsets
-
 from reviews.models import Title
 
 
