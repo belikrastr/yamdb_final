@@ -1,11 +1,12 @@
 from datetime import date
 
-from api_yamdb.settings import (MESSAGE_FOR_RESERVED_NAME,
-                                MESSAGE_FOR_USER_NOT_FOUND, RESERVED_NAME)
 from django.core.exceptions import ValidationError
 from django.shortcuts import get_object_or_404
 from rest_framework import exceptions, serializers
 from rest_framework.validators import UniqueValidator
+
+from api_yamdb.settings import (MESSAGE_FOR_RESERVED_NAME,
+                                MESSAGE_FOR_USER_NOT_FOUND, RESERVED_NAME)
 from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import User
 

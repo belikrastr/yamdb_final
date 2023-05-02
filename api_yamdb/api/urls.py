@@ -1,5 +1,6 @@
 from django.urls import include, path
 from rest_framework.routers import SimpleRouter
+
 from users.views import UserViewSetForAdmin
 
 from .views import (CategoryViewSet, CommentViewSet, GenreViewSet,
