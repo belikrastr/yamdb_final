@@ -59,6 +59,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён
           script: |
+            # Выполняет pull образа с DockerHub
             sudo docker pull ibelikbot/yamdb
+            #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 ibelikbot/yamdb
