@@ -3,10 +3,10 @@
 ### Описание
 API позволяет пользователям добавлять отзывы о фильмах, книгах и музыке, а также получать рейтинги для произведений.
 ### Технологии
-Python 3.7
-Django 2.2.19
-Django REST Framework 3.12.4
-Django REST Framework Simple JWT 4.7.2
+- Python 3.7
+- Django 2.2.19
+- Django REST Framework 3.12.4
+- Django REST Framework Simple JWT 4.7.2
 ### Запуск проекта 
 - Запустите docker-compose:
 ```
