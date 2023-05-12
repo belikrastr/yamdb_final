@@ -34,6 +34,6 @@ docker-compose exec web python manage.py createsuperuser
 ```
 docker-compose exec web python manage.py collectstatic --no-input
 ```
-- Ссылка на развернутый проект http://localhost/redoc/
+- Ссылка на развернутый проект http://51.250.83.178/redoc/
 ### Авторы
-Владимир.
+Владимир
